@@ -1,0 +1,834 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>poses</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-image: url('images/back.jpg');">
+    <h1>POSES!</h1>
+    <div style="margin: 2% 0 0 5%; background-image: url('images/back3.jpg'); display: inline-block; padding: 10px 10px 10px 10px;">
+      <img src="images/new1.gif" alt="" style="max-height: 50px; max-width: 50px; margin: -5% 0 0 -3%;">
+      <h4 style="font-size: large; color: rgb(156, 24, 24); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin: -7% 0 8% 10%; font-weight: 600; font-size: larger;">didn't found! Upload your custom Pose</h4>
+      <form action="" method="post" enctype="multipart/form-data" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        {{form.hidden_tag()}}
+        {{form.file()}}
+        {{form.submit()}}
+      </form>
+    </div>
+    <a href="/" style="margin: 0 0 0 10vw;">Home</a>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/">Home </a>
+            <a class="nav-item nav-link" href="/features">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link " href="/register_page">Register</a>
+            <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+            />
+             Google Fonts -->
+<!-- <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+            />
+             MDB -->
+<!-- <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+            rel="stylesheet"
+            />    </div>
+        </div>
+      </nav>
+    </section>
+
+    <h1>POSES!</h1>
+    <a href="/logout">Logout</a>
+    <a href="/" style="margin: 0 0 0 40vw;">Home</a>
+    <a href="/features" style="margin: 0 0 0 10vw;">Back</a>
+    
+
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 5vh 5vw 0 5vw;
+      "
+    >  -->
+
+<!-- <div class="card" style="width: 18rem">
+      <img src="/video/yoga111.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Warrior II Pose |Virabhadrasana 2</h5>
+        <p class="card-text">
+          This strong pose energizes your legs, 
+          helps you develop better balance and stability, 
+          and stretches your hips and groin muscles.
+        </p>
+        <a href="{{ url_for('pose',id='yoga111.jpg') }}" class="btn btn-primary"
+          >Practice</a
+        >
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="/video/yoga24.jpg" class="card-img-top" alt="..." style="max-height: 30vh;" />
+      <div class="card-body">
+        <h5 class="card-title">Tree Pose 1|Vriksasana</h5>
+        <p class="card-text">
+          Improves balance and stability in the legs. It helps relieve stress. 
+          It gives tranquillity to your mind, thus good for those who are facing 
+          problems with depression and anxiety.
+        </p>
+        <a href="{{ url_for('pose',id='yoga24.jpg') }}" class="btn btn-primary"
+          >Practice</a
+        >
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="/video/yoga25.jpg" class="card-img-top" alt="..." style="max-height: 30vh;" />
+      <div class="card-body">
+        <h5 class="card-title">T Pose</h5>
+        <p class="card-text">
+          Improves balance and stability in the legs. It helps relieve stress. 
+          It gives tranquillity to your mind, thus good for those who are facing 
+          problems with depression and anxiety.
+        </p>
+        <a href="{{ url_for('pose',id='yoga25.jpg') }}" class="btn btn-primary"
+          >Practice</a
+        >
+      </div>
+    </div>
+
+
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga12.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Warrior II Pose |Virabhadrasana 2</h5>
+          <p class="card-text">
+            This strong pose energizes your legs, 
+            helps you develop better balance and stability, 
+            and stretches your hips and groin muscles.
+          </p>
+          <a href="{{ url_for('pose',id='yoga12.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga9.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Downward dog</h5>
+          <p class="card-text">
+            The downward dog is a great way to drain the sinuses. It relieves any pressure caused by 
+            colds or sinus infections. Downward dog also moves white blood cells throughout your 
+            body that help prevent infection and increases immunity. 
+          </p>
+          <a href="{{ url_for('pose',id='yoga9.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga20.jpg" class="card-img-top" alt="..." style="max-height: 40vh;" />
+        <div class="card-body">
+          <h5 class="card-title">Tree Pose II|Vrksasana</h5>
+          <p class="card-text">
+            Builds balance and stability, helps you to focus, and promotes healthy alignment.
+          </p>
+          <a href="{{ url_for('pose',id='yoga20.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga11.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Goddess pose</h5>
+          <p class="card-text">
+            Stretches your hips, groin, and chest. Tones and strengthens the core muscles. 
+           Strengthens the quads and inner thighs. Heats the body and increases circulation.
+          </p>
+          <a href="{{ url_for('pose',id='yoga11.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga3.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Marjariasana|Cat Pose </h5>
+          <p class="card-text">
+            Makes the spine flexible. Helps relieve backache.
+          </p>
+          <a href="{{ url_for('pose',id='yoga3.jpeg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga15.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Side Plank</h5>
+          <p class="card-text">
+            By strengthening your back, chest, shoulders, neck, and abs, 
+            this exercise makes it easier to keep your shoulders back and your lower 
+            back in a neutral position while sitting 
+            or standing — two vital components of good posture.
+          </p>
+          <a href="{{ url_for('pose',id='yoga15.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga16.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Advance Side Plank</h5>
+          <p class="card-text">
+            Prevent Muscle Imbalances That May Cause Injury.  
+            Side planking improves functional movement. 
+            Burn Calories And Body Fat. 
+            Improve your sense of balance and coordination.
+          </p>
+          <a href="{{ url_for('pose',id='yoga16.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga19.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="{{ url_for('pose',id='yoga19.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga21.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="{{ url_for('pose',id='yoga21.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga22.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="{{ url_for('pose',id='yoga22.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga23.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="{{ url_for('pose',id='yoga23.png') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="{{ url_for('pose',id='yoga1.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga8.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="{{ url_for('pose',id='yoga8.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga10.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="{{ url_for('pose',id='yoga10.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga13.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="{{ url_for('pose',id='yoga13.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div> 
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Warrior II Pose |Virabhadrasana 2</h5>
+          <p class="card-text">
+            This strong pose energizes your legs, 
+            helps you develop better balance and stability, 
+            and stretches your hips and groin muscles.
+          </p>
+          <a href="{{ url_for('pose',id='yoga2.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+ <ul>
+      <li>
+        <a href="{{ url_for('pose',id=1) }}">pose 1</a>
+      </li>
+      <br />
+      <li>
+        <a href="{{ url_for('pose',id=10) }}">pose 2</a>
+      </li>
+      <br />
+      <li>
+        <a href="{{ url_for('pose',id=20) }}">pose 3</a>
+      </li>
+      <br />
+    </ul>   -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>poses</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-image: url('images/back.jpg')">
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/">Home </a>
+            <a class="nav-item nav-link" href="/features">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link" href="/register_page">Register</a>
+            <a href="/logout">
+              <button
+                style="margin: 0 0 0 70vw"
+                type="button"
+                class="btn btn-danger"
+              >
+                Logout
+              </button>
+            </a>
+            <link
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+              rel="stylesheet"
+            />
+            <!-- Google Fonts -->
+            <link
+              href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+              rel="stylesheet"
+            />
+            <!-- MDB -->
+            <link
+              href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+              rel="stylesheet"
+            />
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <div
+      style="
+        margin: 2% 0 0 5%;
+        background-image: url('images/back3.jpg');
+        display: inline-block;
+        padding: 10px 10px 10px 10px;
+      "
+    >
+      <img
+        src="images/new1.gif"
+        alt=""
+        style="max-height: 50px; max-width: 50px; margin: -5% 0 0 -3%"
+      />
+      <h4
+        style="
+          font-size: large;
+          color: rgb(156, 24, 24);
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          margin: -7% 0 8% 10%;
+          font-weight: 600;
+          font-size: larger;
+        "
+      >
+        didn't found! Upload your custom Pose
+      </h4>
+      <form
+        action=""
+        method="post"
+        enctype="multipart/form-data"
+        style="
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+            sans-serif;
+        "
+      >
+        {{form.hidden_tag()}} {{form.file()}} {{form.submit()}}
+      </form>
+    </div>
+    <!-- <a href="/" style="margin: 0 0 0 10vw">Home</a>
+    <a href="/features" style="margin: 0 0 0 10vw">Back</a> -->
+
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 5vh 5vw 0 5vw;
+      "
+    >
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga111.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Warrior II Pose |Virabhadrasana 2</h5>
+          <p class="card-text">
+            This strong pose energizes your legs, helps you develop better
+            balance and stability, and stretches your hips and groin muscles.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga111.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="/video/yoga24.jpg"
+          class="card-img-top"
+          alt="..."
+          style="max-height: 30vh"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Tree Pose 1|Vriksasana</h5>
+          <p class="card-text">
+            Improves balance and stability in the legs. It helps relieve stress.
+            It gives tranquillity to your mind, thus good for those who are
+            facing problems with depression and anxiety.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga24.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="/video/yoga25.jpg"
+          class="card-img-top"
+          alt="..."
+          style="max-height: 30vh"
+        />
+        <div class="card-body">
+          <h5 class="card-title">T Pose</h5>
+          <p class="card-text">
+            Improves balance and stability in the legs. It helps relieve stress.
+            It gives tranquillity to your mind, thus good for those who are
+            facing problems with depression and anxiety.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga25.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga12.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Warrior II Pose |Virabhadrasana 2</h5>
+          <p class="card-text">
+            This strong pose energizes your legs, helps you develop better
+            balance and stability, and stretches your hips and groin muscles.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga12.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga9.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Downward dog</h5>
+          <p class="card-text">
+            The downward dog is a great way to drain the sinuses. It relieves
+            any pressure caused by colds or sinus infections. Downward dog also
+            moves white blood cells throughout your body that help prevent
+            infection and increases immunity.
+          </p>
+          <a href="{{ url_for('pose',id='yoga9.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="/video/yoga20.jpg"
+          class="card-img-top"
+          alt="..."
+          style="max-height: 40vh"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Tree Pose II|Vrksasana</h5>
+          <p class="card-text">
+            Builds balance and stability, helps you to focus, and promotes
+            healthy alignment.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga20.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga11.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Goddess pose</h5>
+          <p class="card-text">
+            Stretches your hips, groin, and chest. Tones and strengthens the
+            core muscles. Strengthens the quads and inner thighs. Heats the body
+            and increases circulation.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga11.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga3.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Marjariasana|Cat Pose</h5>
+          <p class="card-text">
+            Makes the spine flexible. Helps relieve backache.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga3.jpeg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga15.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Side Plank</h5>
+          <p class="card-text">
+            By strengthening your back, chest, shoulders, neck, and abs, this
+            exercise makes it easier to keep your shoulders back and your lower
+            back in a neutral position while sitting or standing — two vital
+            components of good posture.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga15.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga16.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Advance Side Plank</h5>
+          <p class="card-text">
+            Prevent Muscle Imbalances That May Cause Injury. Side planking
+            improves functional movement. Burn Calories And Body Fat. Improve
+            your sense of balance and coordination.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga16.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga19.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Tree Pose</h5>
+          <p class="card-text">
+            Stand with feet together, arms at sides. Grab left foot with hand
+            and place sole on inside of right thigh, as high as possible, knee
+            out. Press foot into thigh as you raise arms overhead, palms up.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga19.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga21.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Downward facing Pose</h5>
+          <p class="card-text">
+            Begin on your hands and knees. Align your wrists directly under your
+            shoulders and your knees directly under your hips. The fold of your
+            wrists should be parallel with the top edge of your mat.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga21.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga22.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Tree Pose</h5>
+          <p class="card-text">
+            Stand with feet together, arms at sides. Grab left foot with hand
+            and place sole on inside of right thigh, as high as possible, knee
+            out. Press foot into thigh as you raise arms overhead, palms up.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga22.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga23.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Tree Pose</h5>
+          <p class="card-text">
+            Stand with feet together, arms at sides. Grab left foot with hand
+            and place sole on inside of right thigh, as high as possible, knee
+            out. Press foot into thigh as you raise arms overhead, palms up.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga23.png') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Forearm Hollow Back Pose</h5>
+          <p class="card-text">
+            Bend your knees coming into a pike shape to perform this posture.
+            This Pose Strengthens arms, back and shoulders Stretches chest, neck
+            and abdomen, improves balance
+          </p>
+          <a href="{{ url_for('pose',id='yoga1.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga8.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Downward facing exercise</h5>
+          <p class="card-text">
+            It is an inversion asana, often practised as part of a flowing
+            sequence of poses, especially Surya Namaskar, the Salute to the Sun.
+          </p>
+          <a href="{{ url_for('pose',id='yoga8.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga10.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Goddess Pose</h5>
+          <p class="card-text">
+            This asana is for the exercise of the inner thighs. In this pose the
+            thighs are parallel to the floor.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga10.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga13.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Warrior II Pose</h5>
+          <p class="card-text">
+            Warrior II improves circulation, strengthens your whole body, and
+            opens your hips. It also relieves neck and back pain.
+          </p>
+          <a
+            href="{{ url_for('pose',id='yoga13.jpg') }}"
+            class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="/video/yoga2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Warrior II Pose |Virabhadrasana 2</h5>
+          <p class="card-text">
+            This strong pose energizes your legs, helps you develop better
+            balance and stability, and stretches your hips and groin muscles.
+          </p>
+          <a href="{{ url_for('pose',id='yoga2.jpg') }}" class="btn btn-primary"
+            >Practice</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<!-- <ul>
+      <li>
+        <a href="{{ url_for('pose',id=1) }}">pose 1</a>
+      </li>
+      <br />
+      <li>
+        <a href="{{ url_for('pose',id=10) }}">pose 2</a>
+      </li>
+      <br />
+      <li>
+        <a href="{{ url_for('pose',id=20) }}">pose 3</a>
+      </li>
+      <br />
+    </ul> -->
